@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/blitzer/jquery-ui.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.7/peer.min.js"></script>
+    <script src="js/randompeer.js"></script>
+    <style>
+        body {
+            overflow-x: hidden;
+            margin: auto;
+            text-align: center;
+        }
+
+        #num2 {
+            font-weight: 600;
+            font-size: 30px;
+            padding: 20px;
+            background-color: #4dace2;
+            border: 1px solid #0C6BA1;
+            max-width: 600px;
+            height: 50px;
+        }
+
+        #text {
+            text-align: center;
+        }
+
+        #myText {
+            color: #0C6BA1;
+        }
+
+        #friendText {
+            color: #FF3F00;
+        }
+
+        .submit_on_enter {
+            width: auto;
+        }
+
+        #intro {
+            background-color: #D1D1D1;
+        }
+    </style>
+
+    <title>3numberTwo</title>
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+<div id="load">
+	
+    <div id="spinner">connecting...<BR><img src="spinner.gif"></div>
+	<p><span id="my_timer" style="color: #f00; font-size: 150%; font-weight: bold;">00:00:10</span></p>
+    <button id="reload" onclick="reconnect()">Try to connect again</button>
+    <div id="big">
+        <div id="intro">Send message to your friend</div>
+        <form id="num">
+            <input class="submit_on_enter" type="text" name="q" placeholder="">
+        </form>
+        <div id="text"></div>
+    </div>
+</div>
+<script src="js/game.js"></script>
+<script src="js/connect.js"></script>
+<script>//init();</script>
+
+</body>
+</html>
