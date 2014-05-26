@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.0.5.2 (Linux)">
+	<META NAME="AUTHOR" CONTENT="Admin">
+	<META NAME="CREATED" CONTENT="20140526;17480000">
+	<META NAME="CHANGEDBY" CONTENT="Admin">
+	<META NAME="CHANGED" CONTENT="20140526;17490000">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin-right: 0.59in; margin-top: 0.79in; margin-bottom: 0.79in }
+		P { margin-bottom: 0.08in; direction: ltr; color: #000000; line-height: 115%; widows: 2; orphans: 2 }
+		P.western { font-family: "Calibri", sans-serif; font-size: 11pt; so-language: ru-RU }
+		P.cjk { font-family: "Calibri", sans-serif; font-size: 11pt }
+		P.ctl { font-family: "Times New Roman", serif; font-size: 11pt; so-language: ar-SA }
+		A:link { color: #0000ff }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" TEXT="#000000" LINK="#0000ff" DIR="LTR">
+<P LANG="ru-RU" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+Документация по проекту <SPAN LANG="en-US"><B>3GAME</B></SPAN></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<FONT SIZE=3><B>Описание:</B></FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+  <B>3</B><SPAN LANG="en-US"><B>GAME</B></SPAN><B> – </B>онлайн
+игра для 2х человек. Цель игры – за
+отведенное время набрать больше очков,
+чем твой соперник. Правила очень просты:
+перед Вами поле 5х5,  где в случайном
+порядке расположены число. Одним нажатием
+мышки на свободное поле добавляется
+цифра, указанная в верхнем левом углу
+в поле <SPAN LANG="en-US">next</SPAN>. Если в результате
+на поле окажется 3 или более соседних
+клеток одного номинала, они превращаются
+в большее число, а сумма уничтоженных
+клеток добавляется в Ваши очки.</P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<FONT SIZE=3><B>Принцип работы сети:</B></FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+Проект использует технологию <SPAN LANG="en-US">webRTC</SPAN>.
+О<FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">на
+позволяет обеспечить взаимодействие
+двух клиентов без специализированного
+сервера между ними. Клиенты подключаются
+к облачному серверу, который соединяет
+их между собой. (Используется библиотека
+</SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">peer</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">.</SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">js</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">).
+Специальный ключ, одинаковый для всех
+игроков, позволяет установить соединение
+только с пользователями 3</SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">GAME</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">.
+ Если 2 версии игры запущены одновременно,
+то вскоре они соединятся друг с другом
+и игра начнется.</SPAN></FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><FONT SIZE=3><B><SPAN STYLE="background: #ffffff">Описание
+файлов:</SPAN></B></FONT></FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">Проект
+написан на </SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">html</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">
+и </SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">js</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">.
+Для начала игры необходимо запустить
+файл </SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">index</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">.</SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">html</SPAN></SPAN></FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><SPAN LANG="en-US"><B><SPAN STYLE="background: #ffffff">Index</SPAN></B></SPAN></FONT><FONT COLOR="#000000"><B><SPAN STYLE="background: #ffffff">.</SPAN></B></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><B><SPAN STYLE="background: #ffffff">html</SPAN></B></SPAN></FONT><FONT COLOR="#000000"><B><SPAN STYLE="background: #ffffff">
+</SPAN></B></FONT>
+</P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">Подключается
+к серверу по удаленным ссылкам, подключая
+модули </SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">game</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">.</SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">js</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">
+и </SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">connect</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">.</SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">js</SPAN></SPAN></FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><SPAN LANG="en-US"><B><SPAN STYLE="background: #ffffff">Game</SPAN></B></SPAN></FONT><FONT COLOR="#000000"><B><SPAN STYLE="background: #ffffff">.</SPAN></B></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><B><SPAN STYLE="background: #ffffff">js</SPAN></B></SPAN></FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<SPAN STYLE="background: #ffffff">Основной файл игры,
+добавляет графику и игровую механику.
+</SPAN>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<B><SPAN STYLE="background: #ffffff">Connect.js</SPAN></B></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">Обеспечивает
+взаимодействие между 2мя клиентами
+игры. Установка подключения обеспечивается
+функцией </SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">connectRandom</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">
+из файла </SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">randompeer</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">.</SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">js</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">.
+Эта функция стандартна и описана на
+</SPAN></FONT><FONT COLOR="#0000ff"><U><A HREF="http://peerjs.com/"><SPAN STYLE="background: #ffffff">http://peerjs.com</SPAN></A></U></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">.</SPAN></FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">Когда
+подключение установлено, </SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">connect</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">.</SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">js</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">
+обеспечивает обмен данными между двумя
+клиентами.</SPAN></FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">Сначала,
+используя блок </SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">connection</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">
+</SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">on</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">
+</SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">open</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">,
+устанавливаются исходные одинаковые
+поля для двух игроков, начинается отчет
+таймера</SPAN></FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">Впоследствии,
+используется блок </SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">connection</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">
+</SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">on</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">
+</SPAN></FONT><FONT COLOR="#000000"><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">data</SPAN></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="background: #ffffff">,
+пересылая значение очков игроков друг
+другу.</SPAN></FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+</BODY>
+</HTML>
