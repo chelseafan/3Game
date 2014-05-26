@@ -366,8 +366,7 @@ function render() {
     ctx.fillText('you', tile.x + tile.size * 7 / 2, tile.y - 12);
     ctx.fillText('friend', tile.x + tile.size * 9 / 2, tile.y - 12);
     if (check()) {
-    	alert("You lost! Press R to Restart");
-        //ctx.fillText('press R for restart', tile.x + canvas.width / 2, tile.y - 32);
+         ctx.fillText('GAME OVER. Press R for restart', tile.x + canvas.width / 2, tile.y + 352);
     }
 }
 
